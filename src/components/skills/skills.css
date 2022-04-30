@@ -1,0 +1,73 @@
+.container_skills {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 10%;
+}
+
+.container_skills .skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_skills .soft_skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_skills .soft_skill {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.skill h5, .soft_skill h5 {
+    color: var(--color-light);
+}
+
+.rect-progress-bar-percent {
+    margin: 0 !important;
+    padding-left: 1rem;
+}
+
+.skill {
+    margin-bottom: 0.5rem;
+}
+
+.inner-rect-bar {
+    background-color:var(--color-primary) !important;
+}
+
+.progress-bar-track {
+    stroke:var(--color-primary) !important;
+}
+.progress-bar-percent {
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 1200px) {
+    .container_skills {
+        width: 80%;
+        grid-template-columns: 55% 35%;
+        gap: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container_skills {
+        width: 90%;
+        grid-template-columns: 55% 40%;
+        gap: 5%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .container_skills {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+    .soft_skills {
+        margin-bottom: 5rem;
+    }
+}
