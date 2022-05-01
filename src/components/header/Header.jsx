@@ -12,9 +12,11 @@ const Header = () => {
     return (
         <header>
             <div className="container header_container" id="header">
-                <h5>Hello I'm</h5>
-                <h1>Kusal Thiwanka</h1>
-                <h5>Fullstack Developer</h5>
+                <div className="header_title">
+                    <h4>Hello I'm</h4>
+                    <h1><span>Kusal Thiwanka</span></h1>
+                    <h4>Fullstack Developer</h4>
+                </div>
                 <div className="header_btns">
                     <a className="btn" href="https://kusalthiwanka.com/kusal_thiwanka_cv.pdf" target="_blank" rel="noreferrer">View CV</a>
                     <a className="btn btn-primary " href="#contact">Let's Talk</a>

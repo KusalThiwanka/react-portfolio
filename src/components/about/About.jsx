@@ -6,7 +6,7 @@ import {FaAward, FaDesktop, FaUsers} from 'react-icons/fa'
 const About = () => {
     return (
         <section id="about">
-            <h2>About Me</h2>
+            <h2 className="section_title">About Me</h2>
             <div className="container about_container">
                 <div className="about_img">
                     <img src={KUSAL} alt="Kusal Thiwanka" />

@@ -10,6 +10,47 @@ header {
     position: relative;
 }
 
+.header_container .header_title {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.header_container h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.header_container span{
+    font-family: "Kaushan Script", cursive;
+    font-size: 4rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.header_container span:after {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 30px;
+    height: 4px;
+    content: "";
+    background: #fff;
+    margin-right: -30px;
+}
+.header_container span:before {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 30px;
+    height: 4px;
+    content: "";
+    background: #fff;
+    margin-left: -30px;
+}
+
 .header_btns {
     margin-top: 3rem;
     display: flex;
