@@ -3,6 +3,10 @@ import './header.css'
 import KUSAL from '../../assets/kusal_img.png'
 import {BsLinkedin, BsGithub, BsTwitter, BsStackOverflow, BsChevronDoubleDown} from 'react-icons/bs'
 
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import { Suspense } from 'react';
+import Model from './Model'
 
 const Header = () => {
     return (
@@ -25,7 +29,17 @@ const Header = () => {
                     <a href="#menubar"><BsChevronDoubleDown size={25}/></a>
                 </div>
                 <div className="header_img">
-                    <img src={KUSAL} alt="Kusal Thiwanka Profile" />
+                    {/* <img src={KUSAL} alt="Kusal Thiwanka Profile" /> */}
+
+                    <Canvas className='canvas'>
+                        <OrbitControls enableZoom={true} />
+                        <ambientLight intensity={0.5} />
+                        <directionalLight position={[-2, 5, 2]} intensity={1} />
+                        <Suspense fallback={null}>
+                        <Model />
+                        </Suspense>
+                    </Canvas>
+
                 </div>
             </div>
         </header>
