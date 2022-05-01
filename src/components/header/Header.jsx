@@ -1,6 +1,6 @@
 import React from "react";
 import './header.css'
-import KUSAL from '../../assets/kusal_img.png'
+// import KUSAL from '../../assets/kusal_img.png'
 import {BsLinkedin, BsGithub, BsTwitter, BsStackOverflow, BsChevronDoubleDown} from 'react-icons/bs'
 
 import { Canvas } from '@react-three/fiber';
@@ -28,9 +28,10 @@ const Header = () => {
                 <div className="header_scroll">
                     <a href="#menubar"><BsChevronDoubleDown size={25}/></a>
                 </div>
-                <div className="header_img">
-                    {/* <img src={KUSAL} alt="Kusal Thiwanka Profile" /> */}
-
+                {/* <div className="header_img">
+                    <img src={KUSAL} alt="Kusal Thiwanka Profile" />
+                </div> */}
+                <div className="header_model">
                     <Canvas className='canvas'>
                         <OrbitControls enableZoom={true} />
                         <ambientLight intensity={0.5} />
@@ -39,7 +40,6 @@ const Header = () => {
                         <Model />
                         </Suspense>
                     </Canvas>
-
                 </div>
             </div>
         </header>

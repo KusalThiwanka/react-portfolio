@@ -40,7 +40,7 @@ header {
     background: var(--color-primary);
 }
 
-.header_img {
+/* .header_img {
     background: linear-gradient(var(--color-primary), transparent);
     width: 24rem;
     height: 30rem;
@@ -51,6 +51,15 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+} */
+
+.header_model {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    margin-top: 4rem;
 }
 
 .header_scroll {
