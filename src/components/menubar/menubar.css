@@ -1,12 +1,12 @@
 nav {
     background: rgba(0, 0, 0, 0.5);
     width: max-content;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     z-index: 999;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 1rem;
     display: flex;
     gap: 1rem;
     border-radius: 3rem;

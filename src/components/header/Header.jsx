@@ -1,12 +1,17 @@
-import React from "react";
+import React, {Suspense} from "react";
 import './header.css'
 // import KUSAL from '../../assets/kusal_img.png'
 import {BsLinkedin, BsGithub, BsTwitter, BsStackOverflow, BsChevronDoubleDown} from 'react-icons/bs'
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { Suspense } from 'react';
+import { Html, useProgress } from '@react-three/drei'
 import Model from './Model'
+
+function Loader() {
+  const { progress } = useProgress()
+  return <Html center>3D model {progress} % loaded</Html>
+}
 
 const Header = () => {
     return (
@@ -30,16 +35,13 @@ const Header = () => {
                 <div className="header_scroll">
                     <a href="#menubar"><BsChevronDoubleDown size={25}/></a>
                 </div>
-                {/* <div className="header_img">
-                    <img src={KUSAL} alt="Kusal Thiwanka Profile" />
-                </div> */}
                 <div className="header_model">
                     <Canvas className='canvas'>
                         <OrbitControls enableZoom={true} />
                         <ambientLight intensity={0.5} />
                         <directionalLight position={[-2, 5, 2]} intensity={1} />
-                        <Suspense fallback={null}>
-                        <Model />
+                        <Suspense fallback={<Loader />}>
+                            <Model />
                         </Suspense>
                     </Canvas>
                 </div>
