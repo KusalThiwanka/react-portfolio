@@ -1,16 +1,16 @@
-import React, {Suspense} from "react";
-import './header.css'
+import React, { Suspense } from "react";
+import "./header.css";
 // import KUSAL from '../../assets/kusal_img.png'
-import {BsLinkedin, BsGithub, BsTwitter, BsStackOverflow, BsChevronDoubleDown} from 'react-icons/bs'
+import { BsLinkedin, BsGithub, BsTwitter, BsStackOverflow, BsChevronDoubleDown } from "react-icons/bs";
 
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { Html, useProgress } from '@react-three/drei'
-import Model from './Model'
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Html, useProgress } from "@react-three/drei";
+import Model from "./Model";
 
 function Loader() {
-  const { progress } = useProgress()
-  return <Html center>3D model {progress} % loaded</Html>
+    const { progress } = useProgress();
+    return <Html center>3D model {progress} % loaded</Html>;
 }
 
 const Header = () => {
@@ -19,24 +19,40 @@ const Header = () => {
             <div className="container header_container" id="header">
                 <div className="header_title">
                     <h4>Hello I'm</h4>
-                    <h1><span>Kusal Thiwanka</span></h1>
+                    <h1>
+                        <span>Kusal Thiwanka</span>
+                    </h1>
                     <h4>Fullstack Developer</h4>
                 </div>
                 <div className="header_btns">
-                    <a className="btn" href="https://kusalthiwanka.com/kusal_thiwanka_cv.pdf" target="_blank" rel="noreferrer">View CV</a>
-                    <a className="btn btn-primary " href="#contact">Let's Talk</a>
+                    <a className="btn" href="https://kusalthiwanka.github.io/se_resume_kusal_thiwanka.pdf" target="_blank" rel="noreferrer">
+                        View CV
+                    </a>
+                    <a className="btn btn-primary " href="#contact">
+                        Let's Talk
+                    </a>
                 </div>
                 <div className="header_social">
-                    <a href="https://www.linkedin.com/in/kusal-thiwanka/" target="_blank" rel="noreferrer"><BsLinkedin size={25}/></a>
-                    <a href="https://github.com/KusalThiwanka" target="_blank" rel="noreferrer"><BsGithub size={25}/></a>
-                    <a href="https://twitter.com/KusalThiwanka" target="_blank" rel="noreferrer"><BsTwitter size={25}/></a>
-                    <a href="https://stackoverflow.com/users/11021308/kusal-thiwanka" target="_blank" rel="noreferrer"><BsStackOverflow size={25}/></a>
+                    <a href="https://www.linkedin.com/in/kusal-thiwanka/" target="_blank" rel="noreferrer">
+                        <BsLinkedin size={25} />
+                    </a>
+                    <a href="https://github.com/KusalThiwanka" target="_blank" rel="noreferrer">
+                        <BsGithub size={25} />
+                    </a>
+                    <a href="https://twitter.com/KusalThiwanka" target="_blank" rel="noreferrer">
+                        <BsTwitter size={25} />
+                    </a>
+                    <a href="https://stackoverflow.com/users/11021308/kusal-thiwanka" target="_blank" rel="noreferrer">
+                        <BsStackOverflow size={25} />
+                    </a>
                 </div>
                 <div className="header_scroll">
-                    <a href="#menubar"><BsChevronDoubleDown size={25}/></a>
+                    <a href="#about">
+                        <BsChevronDoubleDown size={25} />
+                    </a>
                 </div>
                 <div className="header_model">
-                    <Canvas className='canvas'>
+                    <Canvas className="canvas">
                         <OrbitControls enableZoom={true} />
                         <ambientLight intensity={0.5} />
                         <directionalLight position={[-2, 5, 2]} intensity={1} />
@@ -47,7 +63,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

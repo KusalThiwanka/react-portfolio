@@ -21,8 +21,19 @@
     margin-right: auto !important;
 }
 
-.skill h5, .soft_skill h5 {
+.soft_skill {
+    padding: 10px;
+}
+
+.skill h5,
+.soft_skill h5 {
     color: var(--color-light);
+    align-items: center;
+}
+
+.soft_skill h5 {
+    text-align: center;
+    padding-top: 10px;
 }
 
 .rect-progress-bar-percent {
@@ -35,11 +46,11 @@
 }
 
 .inner-rect-bar {
-    background-color:var(--color-primary) !important;
+    background-color: var(--color-primary) !important;
 }
 
 .progress-bar-track {
-    stroke:var(--color-primary) !important;
+    stroke: var(--color-primary) !important;
 }
 .progress-bar-percent {
     color: var(--color-light);
@@ -60,7 +71,7 @@
         gap: 5%;
     }
 }
-  
+
 @media screen and (max-width: 600px) {
     .container_skills {
         width: 90%;
