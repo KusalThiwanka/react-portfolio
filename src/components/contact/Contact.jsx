@@ -18,15 +18,6 @@ const Contact = () => {
         }
         document.getElementById("contact_submit_btn").style.background = "#dddddd";
         document.getElementById("contact_submit_btn").disabled = true;
-        
-        // form.current.setAttribute("disabled", true);
-        // var formData = form.current;
-        // console.log(formData);
-        // var formInputs = document.getElementsByClassName("form_input");
-        // for (var i = 0; i < formInputs.length; i++) {
-        //     formInputs[i].disabled = true;
-        // }
-        // document.getElementById("contact_submit_btn").style.background = "#dddddd";
 
         const emailSent = new Promise((resolve, reject) => {
             emailjs.sendForm("service_3yy4pxc", "template_vpc8jua", form.current, "msWxcoRERGDKEFOwz").then(
@@ -80,14 +71,6 @@ const Contact = () => {
                         </a>
                     </article>
                 </div>
-                {/* <form ref={form} onSubmit={sendEmail} id="contact_form">
-                    <input type="text" name="name" placeholder="Your Name" className="form_input" required />
-                    <input type="email" name="email" placeholder="Your Email" className="form_input" required />
-                    <textarea name="message" rows="9" placeholder="Your Message" className="form_input" required></textarea>
-                    <button type="submit" className="btn btn-primary form_input" id="contact_submit_btn">
-                        Send Message
-                    </button>
-                </form> */}
                 <form ref={form} onSubmit={sendEmail} id="contact_form">
                     <input type="text" name="name" placeholder="Your Name" className="form_input" required />
                     <input type="email" name="email" placeholder="Your Email" className="form_input" required />

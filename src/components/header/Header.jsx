@@ -22,11 +22,11 @@ const Header = () => {
                     <h1>
                         <span>Kusal Thiwanka</span>
                     </h1>
-                    <h4>Fullstack Developer</h4>
+                    <h4>Software Engineer</h4>
                 </div>
                 <div className="header_btns">
-                    <a className="btn" href="https://kusalthiwanka.github.io/se_resume_kusal_thiwanka.pdf" target="_blank" rel="noreferrer">
-                        View CV
+                    <a className="btn" href="https://kusalthiwanka.com/se_resume_kusal_thiwanka.pdf" target="_blank" rel="noreferrer">
+                        Resume
                     </a>
                     <a className="btn btn-primary " href="#contact">
                         Let's Talk

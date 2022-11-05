@@ -29,10 +29,7 @@ const About = () => {
                             <small>30+ Happy Clients</small>
                         </article>
                     </div>
-                    <p className="about_description">
-                        I am Full Stack Developer with three years of experience on developing scalable web applications and working across the full stack. Excellence experience in analysis, designing, development, implementation and testing of various internet base applications. Expert in several of languages and platforms. <br />
-                        I'm utilizing my knowledge to solve practical problems in the real world and getting opportunities to step beyond my comfort zone and extend my expertise while providing significant service to the community
-                    </p>
+                    <p className="about_description">I am a Software Engineer with more than three years of experience in developing scalable web applications and working across the full stack. Experience in analysis, designing, development, implementation and testing of various internet-based applications. Expert in several languages and platforms. I'm utilizing my knowledge to solve practical problems in the real world and getting opportunities to step beyond my comfort zone and extend my expertise while providing significant service to the community.</p>
                     <a href="#contact" className="btn btn-primary">
                         Let's Talk
                     </a>

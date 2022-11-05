@@ -81,15 +81,15 @@ const Skills = () => {
                 </div>
                 <div className="soft_skills">
                     <div className="soft_skill p_20">
-                        <Progress.SemiCircle progress={0.8} options={options} initialAnimate={true} containerStyle={containerStyle} />
+                        <Progress.SemiCircle progress={0.9} options={options} initialAnimate={true} containerStyle={containerStyle} />
                         <h5>Problem Solving</h5>
                     </div>
                     <div className="soft_skill">
-                        <Progress.SemiCircle progress={0.9} options={options} initialAnimate={true} containerStyle={containerStyle} />
+                        <Progress.SemiCircle progress={0.85} options={options} initialAnimate={true} containerStyle={containerStyle} />
                         <h5>Team Work</h5>
                     </div>
                     <div className="soft_skill p_20">
-                        <Progress.SemiCircle progress={0.8} options={options} initialAnimate={true} containerStyle={containerStyle} />
+                        <Progress.SemiCircle progress={0.85} options={options} initialAnimate={true} containerStyle={containerStyle} />
                         <h5>Fast Learner</h5>
                     </div>
                     <div className="soft_skill">
