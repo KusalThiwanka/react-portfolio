@@ -10,7 +10,7 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(form.current);
+        // console.log(form.current);
         var formInputs = document.getElementById("contact_form");
         var elements = formInputs.elements;
         for (var i = 0, len = elements.length; i < len; ++i) {
@@ -20,7 +20,7 @@ const Contact = () => {
         document.getElementById("contact_submit_btn").disabled = true;
 
         const emailSent = new Promise((resolve, reject) => {
-            emailjs.sendForm("service_3yy4pxc", "template_vpc8jua", form.current, "msWxcoRERGDKEFOwz").then(
+            emailjs.sendForm("service_hjop6pm", "template_vpc8jua", form.current, "msWxcoRERGDKEFOwz").then(
                 (result) => {
                     console.log(result.text);
                     return resolve();
@@ -64,9 +64,9 @@ const Contact = () => {
                     <article className="contact_option">
                         <RiWhatsappLine className="contact_option_icon" />
                         <h4>Whatsapp</h4>
-                        <small>+94 76 924 2181</small>
+                        <small>+1 647 677 2260</small>
                         <br />
-                        <a href="https://wa.me/94769242181" target="_blank" rel="noreferrer">
+                        <a href="https://wa.me/16476772260" target="_blank" rel="noreferrer">
                             Send a message
                         </a>
                     </article>

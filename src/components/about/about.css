@@ -78,14 +78,16 @@
 @media screen and (max-width: 600px) {
     .about_cards {
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 2rem;
     }
     .about_img {
-        width: 60%;
+        width: 50%;
         margin: 0 auto 2rem;
     }
     .about_container {
         text-align: center;
+        width: 80%;
+        gap: 10%;
     }
     .about_container p {
         margin: 1rem 0 1rem;

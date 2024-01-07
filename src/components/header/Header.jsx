@@ -25,7 +25,7 @@ const Header = () => {
                     <h4>Software Engineer</h4>
                 </div>
                 <div className="header_btns">
-                    <a className="btn" href="https://kusalthiwanka.com/se_resume_kusal_thiwanka.pdf" target="_blank" rel="noreferrer">
+                    <a className="btn" href="https://kusalthiwanka.com/resume_kusal_thiwanka.pdf" target="_blank" rel="noreferrer">
                         Resume
                     </a>
                     <a className="btn btn-primary " href="#contact">
@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
                 <div className="header_model">
                     <Canvas className="canvas">
-                        <OrbitControls enableZoom={true} />
+                        <OrbitControls enableZoom={false} />
                         <ambientLight intensity={0.5} />
                         <directionalLight position={[-2, 5, 2]} intensity={1} />
                         <Suspense fallback={<Loader />}>

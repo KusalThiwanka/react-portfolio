@@ -1,84 +1,47 @@
 .container_skills {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 60% 30%;
-    gap: 10%;
-}
-
-.container_skills .skills {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container_skills .soft_skills {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
+.skill_item_image {
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
 }
 
-.container_skills .soft_skill {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.soft_skill {
-    padding: 10px;
-}
-
-.skill h5,
-.soft_skill h5 {
-    color: var(--color-light);
-    align-items: center;
-}
-
-.soft_skill h5 {
+.skill_item_title {
+    margin: 1rem 0 1rem;
     text-align: center;
-    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 100;
 }
 
-.rect-progress-bar-percent {
-    margin: 0 !important;
-    padding-left: 1rem;
+.skill_item {
+    flex: 0 0 calc(13%);
+    padding: 20px;
+    margin: 10px;
 }
 
-.skill {
-    margin-bottom: 0.5rem;
-}
-
-.inner-rect-bar {
-    background-color: var(--color-primary) !important;
-}
-
-.progress-bar-track {
-    stroke: var(--color-primary) !important;
-}
-.progress-bar-percent {
-    color: var(--color-light);
-}
-
-@media screen and (max-width: 1200px) {
-    .container_skills {
-        width: 80%;
-        grid-template-columns: 55% 35%;
-        gap: 10%;
+@media screen and (max-width: 1300px) {
+    .skill_item {
+        flex: 0 0 calc(16.66%);
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .container_skills {
-        width: 90%;
-        grid-template-columns: 55% 40%;
-        gap: 5%;
+    .skill_item {
+        flex: 0 0 calc(18%);
     }
 }
 
-@media screen and (max-width: 600px) {
-    .container_skills {
-        width: 90%;
-        grid-template-columns: 1fr;
-        gap: 5%;
+@media screen and (max-width: 800px) {
+    .skill_item {
+        flex: 0 0 calc(23%);
     }
-    .soft_skills {
-        margin-bottom: 5rem;
+}
+  
+@media screen and (max-width: 600px) {
+    .skill_item {
+        flex: 0 0 calc(20.66%);
     }
 }

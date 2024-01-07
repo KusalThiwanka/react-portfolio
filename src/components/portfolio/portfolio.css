@@ -2,14 +2,19 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .portfolio_item {
     background:var(--color-bg-variant);
     padding: 0.3rem;
+    grid-column: span 1;
     border-radius: 1rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    justify-self: center; /* Center horizontally within the cell */
+    align-self: center; /* Center vertically within the cell */
 }
 
 .portfolio_item:hover {

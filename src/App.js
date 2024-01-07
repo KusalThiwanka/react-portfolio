@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header/Header'
 import Munebar from './components/menubar/Menubar'
+import Experience from './components/experience/Experience'
 import About from './components/about/About'
 import Skills from './components/skills/Skills'
 import Portfolio from './components/portfolio/Portfolio'
@@ -28,6 +29,7 @@ function App() {
 
       <Munebar />
       <About />
+      <Experience />
       <Skills />
       <Portfolio />
       <Testimonials />
