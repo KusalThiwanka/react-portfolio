@@ -12,7 +12,7 @@ import { useFrame } from '@react-three/fiber';
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/model.gltf')
+  const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/model.gltf`)
   useFrame(() => {
     if (group.current) {
       group.current.rotation.y += 0.01
@@ -40,4 +40,4 @@ export default function Model({ ...props }) {
   )
 }
 
-useGLTF.preload('/model.gltf')
+useGLTF.preload(`${process.env.PUBLIC_URL}/model.gltf`)
