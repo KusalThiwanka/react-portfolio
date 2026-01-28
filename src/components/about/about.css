@@ -77,9 +77,22 @@
   
 @media screen and (max-width: 600px) {
     .about_cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
+
+    .about_card {
+        flex: 0 0 calc(50% - 0.5rem);
+        max-width: calc(50% - 0.5rem);
+    }
+
+    .about_card:nth-child(3) {
+        flex: 0 0 calc(50% - 0.5rem);
+        max-width: calc(50% - 0.5rem);
+    }
+
     .about_img {
         width: 50%;
         margin: 0 auto 2rem;
@@ -90,6 +103,18 @@
         gap: 10%;
     }
     .about_container p {
-        margin: 1rem 0 1rem;
+        margin: 1.5rem 0 1.5rem;
+    }
+
+    .about_text > .btn {
+        margin-top: 1rem;
+    }
+
+    #about {
+        padding-top: 3rem;
+    }
+
+    #about .section_title {
+        margin-bottom: 3rem;
     }
 }
