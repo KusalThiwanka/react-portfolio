@@ -10,23 +10,43 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        // console.log(form.current);
-        var formInputs = document.getElementById("contact_form");
-        var elements = formInputs.elements;
-        for (var i = 0, len = elements.length; i < len; ++i) {
+        const formInputs = document.getElementById("contact_form");
+        const submitBtn = document.getElementById("contact_submit_btn");
+        
+        if (!formInputs || !submitBtn) return;
+        
+        const elements = formInputs.elements;
+        for (let i = 0, len = elements.length; i < len; ++i) {
             elements[i].readOnly = true;
         }
-        document.getElementById("contact_submit_btn").style.background = "#dddddd";
-        document.getElementById("contact_submit_btn").disabled = true;
+        submitBtn.style.background = "#dddddd";
+        submitBtn.disabled = true;
 
         const emailSent = new Promise((resolve, reject) => {
-            emailjs.sendForm("service_hjop6pm", "template_vpc8jua", form.current, "msWxcoRERGDKEFOwz").then(
+            emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            ).then(
                 (result) => {
-                    console.log(result.text);
+                    // Reset form after successful submission
+                    form.current.reset();
+                    // Re-enable form inputs
+                    for (let i = 0, len = elements.length; i < len; ++i) {
+                        elements[i].readOnly = false;
+                    }
+                    submitBtn.style.background = "";
+                    submitBtn.disabled = false;
                     return resolve();
                 },
                 (error) => {
-                    console.log(error.text);
+                    // Re-enable form inputs on error
+                    for (let i = 0, len = elements.length; i < len; ++i) {
+                        elements[i].readOnly = false;
+                    }
+                    submitBtn.style.background = "";
+                    submitBtn.disabled = false;
                     return reject();
                 }
             );

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/header/Header'
-import Munebar from './components/menubar/Menubar'
+import Menubar from './components/menubar/Menubar'
 import Experience from './components/experience/Experience'
 import About from './components/about/About'
 import Skills from './components/skills/Skills'
@@ -27,7 +27,7 @@ function App() {
         </Suspense>
       </Canvas> */}
 
-      <Munebar />
+      <Menubar />
       <About />
       <Experience />
       <Skills />

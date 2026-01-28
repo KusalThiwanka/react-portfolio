@@ -38,13 +38,31 @@ const Testimonials = () => {
 
     return (
         <section id="testimonials">
-            <h2>Testimonials</h2>
-            <Swiper className="container container_testimonials" modules={[Navigation, Pagination]} slidesPerView={1} navigation pagination={{ clickable: true }}>
+            <h2 className="section_title">Testimonials</h2>
+            <Swiper 
+                className="container container_testimonials" 
+                modules={[Navigation, Pagination]} 
+                slidesPerView={1} 
+                spaceBetween={40}
+                navigation 
+                pagination={{ clickable: true }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                    },
+                    1024: {
+                        slidesPerView: 1,
+                    },
+                }}
+            >
                 {testimonial_data.map(({ id, client_name, image, review }) => {
                     return (
                         <SwiperSlide key={id} className="testimonial">
                             <div className="client_avatar">
-                                <img src={image} alt="Client Avatar" />
+                                <img src={image} alt={`${client_name} - Client testimonial`} />
                             </div>
                             <h4 className="client_name">{client_name}</h4>
                             <br />

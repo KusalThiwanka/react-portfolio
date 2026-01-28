@@ -33,21 +33,21 @@ const Header = () => {
                     </a>
                 </div>
                 <div className="header_social">
-                    <a href="https://www.linkedin.com/in/kusal-thiwanka/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/kusal-thiwanka/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                         <BsLinkedin size={25} />
                     </a>
-                    <a href="https://github.com/KusalThiwanka" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/KusalThiwanka" target="_blank" rel="noreferrer" aria-label="GitHub">
                         <BsGithub size={25} />
                     </a>
-                    <a href="https://twitter.com/KusalThiwanka" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/KusalThiwanka" target="_blank" rel="noreferrer" aria-label="Twitter">
                         <BsTwitter size={25} />
                     </a>
-                    <a href="https://stackoverflow.com/users/11021308/kusal-thiwanka" target="_blank" rel="noreferrer">
+                    <a href="https://stackoverflow.com/users/11021308/kusal-thiwanka" target="_blank" rel="noreferrer" aria-label="Stack Overflow">
                         <BsStackOverflow size={25} />
                     </a>
                 </div>
                 <div className="header_scroll">
-                    <a href="#about">
+                    <a href="#about" aria-label="Scroll to About section">
                         <BsChevronDoubleDown size={25} />
                     </a>
                 </div>

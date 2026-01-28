@@ -14,7 +14,9 @@ export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/model.gltf')
   useFrame(() => {
-    group.current.rotation.y += 0.01
+    if (group.current) {
+      group.current.rotation.y += 0.01
+    }
   })
   return (
     <group ref={group} {...props} dispose={null}>

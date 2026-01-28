@@ -12,14 +12,6 @@ import OSLogo from "../../assets/skills_logo/os.png";
 import PMLogo from "../../assets/skills_logo/pm.png";
 import SecurityLogo from "../../assets/skills_logo/security.png";
 
-
-import PROJECT1 from "../../assets/portfolio/online-class-learning-management-system.jpg";
-import PROJECT2 from "../../assets/portfolio/proposal-and-quatation-management-system.jpg";
-import PROJECT3 from "../../assets/portfolio/video-undownloadble-protection-service-image.jpg";
-import PROJECT4 from "../../assets/portfolio/company-website-landing-page-react-responsive-mobile-friendly.jpg";
-import PROJECT5 from "../../assets/portfolio/website-landing page-web-page.jpg";
-import PROJECT6 from "../../assets/portfolio/online-store-ecommerce-virtual-store-shopify.jpg";
-
 const skills_list = [
     {
         id: 1,
@@ -53,27 +45,27 @@ const skills_list = [
     },
     
     {
-        id: 2,
+        id: 7,
         image: CloudLogo,
         title: "Cloud Computing",
     },
     {
-        id: 3,
+        id: 8,
         image: DBMLogo,
         title: "Database Management",
     },
     {
-        id: 4,
+        id: 9,
         image: OSLogo,
         title: "System and Environment",
     },
     {
-        id: 5,
+        id: 10,
         image: PMLogo,
         title: "Project Management and Tools",
     },
     {
-        id: 6,
+        id: 11,
         image: SecurityLogo,
         title: "Networking and Security",
     },
@@ -82,7 +74,7 @@ const skills_list = [
 const Skills = () => {
     return (
         <section id="skills">
-            <h2>My Skills</h2>
+            <h2 className="section_title">My Skills</h2>
             <div className="container container_skills">
                 {skills_list.map(({ id, image, title }) => {
                         return (

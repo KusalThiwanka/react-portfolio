@@ -55,7 +55,7 @@ const portfolio_data = [
 const Portfolio = () => {
     return (
         <section id="portfolio">
-            <h2>Portfolio</h2>
+            <h2 className="section_title">Portfolio</h2>
             <div className="container portfolio_container">
                 {portfolio_data.map(({ id, image, title, description, link }) => {
                     return (
