@@ -20,7 +20,7 @@ export default function Model({ ...props }) {
   })
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.6}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.5}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes.Hair_Hair1_0.geometry} material={materials.Hair1} />
           <mesh geometry={nodes.soul_patch_Hair1_0.geometry} material={materials.Hair1} />

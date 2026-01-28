@@ -100,13 +100,56 @@ header {
     header {
         height: 100vh;
     }
-  }
-  
+
+    .header_model {
+        width: 35%;
+        height: 55%;
+        left: calc(50% - 17.5%);
+        bottom: 0;
+    }
+
+    .header_container span {
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        padding-top: 5rem;
     }
+
     .header_social, .header_scroll {
         display: none;
+    }
+
+    .header_model {
+        width: 60%;
+        height: 45%;
+        left: calc(50% - 30%);
+        bottom: 5%;
+        margin-top: 2rem;
+    }
+
+    .header_container span {
+        font-size: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header_container span:after,
+    .header_container span:before {
+        width: 20px;
+        top: 30px;
+    }
+
+    .header_container h4 {
+        font-size: 1rem;
+    }
+
+    .header_btns {
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
